@@ -1,0 +1,17 @@
+* text=auto
+
+*.blade.php diff=html
+*.css diff=css
+*.html diff=html
+*.md diff=markdown
+*.php diff=php
+
+*.php linguist-language=PHP
+*.blade.php linguist-language=Blade
+*.css linguist-language=CSS
+*.js linguist-language=JavaScript
+
+/.github export-ignore
+CHANGELOG.md export-ignore
+/vendor/** linguist-vendored
+/node_modules/** linguist-vendored
