@@ -1,6 +1,6 @@
 [build]
   publish = "public"
-  command = "npm run production && composer install --no-dev --prefer-dist"
+  command = "npm run production && npm install && composer install --no-dev --prefer-dist"
 
 [context.production.environment]
   NODE_VERSION = "16.0.0"
