@@ -1,0 +1,11 @@
+[build]
+  publish = "public"
+  command = "npm run production && composer install --no-dev --prefer-dist"
+
+[context.production.environment]
+  NODE_VERSION = "16.0.0"
+  PHP_VERSION = "8.0"
+  APP_ENV = "production"
+  APP_KEY = "base64:kNHMgBaCg9x4D68vpdtxH9C7qyIvVGYrZPPG4IRncQs="
+  APP_DEBUG = "false"
+  APP_URL = "https://simple-crud-laravel.netlify.app/"
